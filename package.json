@@ -3,10 +3,19 @@
   "module": "src/index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bun run --watch src/index.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "bip32": "^5.0.0",
+    "bitcoinjs-lib": "^7.0.1",
+    "coininfo": "^5.2.1",
+    "tiny-secp256k1": "^2.2.4"
   }
 }
